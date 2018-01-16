@@ -1,0 +1,2279 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 8.1.0.604 (R2013a). Operating System: Linux 3.13.0-24-generic #47-Ubuntu SMP Fri May 2 23:30:00 UTC 2014 x86_64.
+%%Title: /home/rudi/Teaching/Matlab/Problems/01_Problems/mcFig1.eps
+%%CreationDate: 05/25/2014  12:57:01
+%%DocumentNeededFonts: Times-Roman
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    17   179   593   612
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    17   179   593   612
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0204 7344 csm
+
+    0     0  6912  5185 rc
+87 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 6913 5186 rf
+6 w
+0 4226 4226 0 0 -4226 1464 4615 4 MP
+PP
+-4226 0 0 4226 4226 0 0 -4226 1464 4615 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+1464 4615 mt 5690 4615 L
+1464 4615 mt 1464  389 L
+1564 4615 mt 1564 4572 L
+%%IncludeResource: font Times-Roman
+/Times-Roman /ISOLatin1Encoding 168 FMSR
+
+1428 4799 mt 
+(-1) s
+2570 4615 mt 2570 4572 L
+2371 4799 mt 
+(-0.5) s
+3577 4615 mt 3577 4572 L
+3535 4799 mt 
+(0) s
+4583 4615 mt 4583 4572 L
+4478 4799 mt 
+(0.5) s
+5589 4615 mt 5589 4572 L
+5547 4799 mt 
+(1) s
+1464 4514 mt 1506 4514 L
+1251 4574 mt 
+(-1) s
+1464 4111 mt 1506 4111 L
+1125 4171 mt 
+(-0.8) s
+1464 3709 mt 1506 3709 L
+1125 3769 mt 
+(-0.6) s
+1464 3306 mt 1506 3306 L
+1125 3366 mt 
+(-0.4) s
+1464 2904 mt 1506 2904 L
+1125 2964 mt 
+(-0.2) s
+1464 2502 mt 1506 2502 L
+1345 2562 mt 
+(0) s
+1464 2099 mt 1506 2099 L
+1219 2159 mt 
+(0.2) s
+1464 1697 mt 1506 1697 L
+1219 1757 mt 
+(0.4) s
+1464 1294 mt 1506 1294 L
+1219 1354 mt 
+(0.6) s
+1464  892 mt 1506  892 L
+1219  952 mt 
+(0.8) s
+1464  489 mt 1506  489 L
+1345  549 mt 
+(1) s
+2562  261 mt 
+(Illustration of the experiments) s
+gs 1464 389 4227 4227 rc
+36 w
+0 j
+0.8 sg
+2012 2012 3576 2501 PO
+0 sg
+2012 2012 3576 2501 FO
+1 j
+6 w
+0 j
+/c8 { 1.000000 0.273000 0.000000 sr} bdef
+c8
+  20   20 2621 2964 PO
+  20   20 2621 2964 FO
+1 j
+0 j
+  20   20 3360 3969 PO
+  20   20 3360 3969 FO
+1 j
+0 j
+  20   20 4662 3301 PO
+  20   20 4662 3301 FO
+1 j
+0 j
+  20   20 2440  725 PO
+  20   20 2440  725 FO
+1 j
+0 j
+  20   20 3350 3108 PO
+  20   20 3350 3108 FO
+1 j
+0 j
+  20   20 2022  849 PO
+  20   20 2022  849 FO
+1 j
+0 j
+  20   20 4509 1143 PO
+  20   20 4509 1143 FO
+1 j
+0 j
+  20   20 1682 2077 PO
+  20   20 1682 2077 FO
+1 j
+0 j
+  20   20 4145 3298 PO
+  20   20 4145 3298 FO
+1 j
+0 j
+  20   20 3139 2679 PO
+  20   20 3139 2679 FO
+1 j
+0 j
+  20   20 4671 1447 PO
+  20   20 4671 1447 FO
+1 j
+0 j
+  20   20 3746 3885 PO
+  20   20 3746 3885 FO
+1 j
+0 j
+  20   20 2527 1453 PO
+  20   20 2527 1453 FO
+1 j
+0 j
+  20   20 2873 2026 PO
+  20   20 2873 2026 FO
+1 j
+0 j
+  20   20 4485 3316 PO
+  20   20 4485 3316 FO
+1 j
+0 j
+  20   20 3117 2210 PO
+  20   20 3117 2210 FO
+1 j
+0 j
+  20   20 4401 2871 PO
+  20   20 4401 2871 FO
+1 j
+0 j
+  20   20 5082 4233 PO
+  20   20 5082 4233 FO
+1 j
+0 j
+  20   20 2219 3314 PO
+  20   20 2219 3314 FO
+1 j
+0 j
+  20   20 3839  631 PO
+  20   20 3839  631 FO
+1 j
+0 j
+  20   20 5184 1433 PO
+  20   20 5184 1433 FO
+1 j
+0 j
+  20   20 3552 1729 PO
+  20   20 3552 1729 FO
+1 j
+0 j
+  20   20 1585 2599 PO
+  20   20 1585 2599 FO
+1 j
+0 j
+  20   20 3061 3519 PO
+  20   20 3061 3519 FO
+1 j
+0 j
+  20   20 4517 1948 PO
+  20   20 4517 1948 FO
+1 j
+0 j
+  20   20 2339 2594 PO
+  20   20 2339 2594 FO
+1 j
+0 j
+  20   20 2289 2574 PO
+  20   20 2289 2574 FO
+1 j
+0 j
+  20   20 5570  579 PO
+  20   20 5570  579 FO
+1 j
+0 j
+  20   20 4526  598 PO
+  20   20 4526  598 FO
+1 j
+0 j
+  20   20 4391  812 PO
+  20   20 4391  812 FO
+1 j
+0 j
+  20   20 5199 4223 PO
+  20   20 5199 4223 FO
+1 j
+0 j
+  20   20 3668 1859 PO
+  20   20 3668 1859 FO
+1 j
+0 j
+  20   20 2942 4338 PO
+  20   20 2942 4338 FO
+1 j
+0 j
+  20   20 3330 4068 PO
+  20   20 3330 4068 FO
+1 j
+0 j
+  20   20 5390 1545 PO
+  20   20 5390 1545 FO
+1 j
+0 j
+  20   20 5202 2316 PO
+  20   20 5202 2316 FO
+1 j
+0 j
+  20   20 4217 4180 PO
+  20   20 4217 4180 FO
+1 j
+0 j
+  20   20 5012 2195 PO
+  20   20 5012 2195 FO
+1 j
+0 j
+  20   20 2727 2205 PO
+  20   20 2727 2205 FO
+1 j
+0 j
+  20   20 3944 1170 PO
+  20   20 3944 1170 FO
+1 j
+0 j
+  20   20 2352 1730 PO
+  20   20 2352 1730 FO
+1 j
+0 j
+  20   20 3694  707 PO
+  20   20 3694  707 FO
+1 j
+0 j
+  20   20 2494 3813 PO
+  20   20 2494 3813 FO
+1 j
+0 j
+  20   20 5206 2092 PO
+  20   20 5206 2092 FO
+1 j
+0 j
+  20   20 2578 2329 PO
+  20   20 2578 2329 FO
+1 j
+0 j
+  20   20 3255 3982 PO
+  20   20 3255 3982 FO
+1 j
+0 j
+  20   20 5423 1743 PO
+  20   20 5423 1743 FO
+1 j
+0 j
+  20   20 2419 3270 PO
+  20   20 2419 3270 FO
+1 j
+0 j
+  20   20 1699 1847 PO
+  20   20 1699 1847 FO
+1 j
+0 j
+  20   20 1895 1049 PO
+  20   20 1895 1049 FO
+1 j
+0 j
+  20   20 3303 2982 PO
+  20   20 3303 2982 FO
+1 j
+0 j
+  20   20 5308 4256 PO
+  20   20 5308 4256 FO
+1 j
+0 j
+  20   20 3965 1715 PO
+  20   20 3965 1715 FO
+1 j
+0 j
+  20   20 2419 1651 PO
+  20   20 2419 1651 FO
+1 j
+0 j
+  20   20 2298 1534 PO
+  20   20 2298 1534 FO
+1 j
+0 j
+  20   20 5489 2041 PO
+  20   20 5489 2041 FO
+1 j
+0 j
+  20   20 3674  872 PO
+  20   20 3674  872 FO
+1 j
+0 j
+  20   20 2795 2775 PO
+  20   20 2795 2775 FO
+1 j
+0 j
+  20   20 2962  927 PO
+  20   20 2962  927 FO
+1 j
+0 j
+  20   20 5033 4050 PO
+  20   20 5033 4050 FO
+1 j
+0 j
+  20   20 1600 3277 PO
+  20   20 1600 3277 FO
+1 j
+0 j
+  20   20 5575 1324 PO
+  20   20 5575 1324 FO
+1 j
+0 j
+  20   20 1637 4148 PO
+  20   20 1637 4148 FO
+1 j
+0 j
+  20   20 4495 3741 PO
+  20   20 4495 3741 FO
+1 j
+0 j
+  20   20 2015 3910 PO
+  20   20 2015 3910 FO
+1 j
+0 j
+  20   20 5018 2913 PO
+  20   20 5018 2913 FO
+1 j
+0 j
+  20   20 5474 4346 PO
+  20   20 5474 4346 FO
+1 j
+0 j
+  20   20 2524 3893 PO
+  20   20 2524 3893 FO
+1 j
+0 j
+  20   20 5573 3203 PO
+  20   20 5573 3203 FO
+1 j
+0 j
+  20   20 3450  916 PO
+  20   20 3450  916 FO
+1 j
+0 j
+  20   20 2449 1929 PO
+  20   20 2449 1929 FO
+1 j
+0 j
+  20   20 4798 3334 PO
+  20   20 4798 3334 FO
+1 j
+0 j
+  20   20 2421 3149 PO
+  20   20 2421 3149 FO
+1 j
+0 j
+  20   20 2083 1785 PO
+  20   20 2083 1785 FO
+1 j
+0 j
+  20   20 1573 3288 PO
+  20   20 1573 3288 FO
+1 j
+0 j
+  20   20 3134  916 PO
+  20   20 3134  916 FO
+1 j
+0 j
+  20   20 5448 1270 PO
+  20   20 5448 1270 FO
+1 j
+0 j
+  20   20 5315 1491 PO
+  20   20 5315 1491 FO
+1 j
+0 j
+  20   20 2126 3769 PO
+  20   20 2126 3769 FO
+1 j
+0 j
+  20   20 5128 3913 PO
+  20   20 5128 3913 FO
+1 j
+0 j
+  20   20 4822 2128 PO
+  20   20 4822 2128 FO
+1 j
+0 j
+  20   20 1661 3951 PO
+  20   20 1661 3951 FO
+1 j
+0 j
+  20   20 3794 3695 PO
+  20   20 3794 3695 FO
+1 j
+0 j
+  20   20 2669 2422 PO
+  20   20 2669 2422 FO
+1 j
+0 j
+  20   20 5100 1142 PO
+  20   20 5100 1142 FO
+1 j
+0 j
+  20   20 1682  576 PO
+  20   20 1682  576 FO
+1 j
+0 j
+  20   20 4340 2044 PO
+  20   20 4340 2044 FO
+1 j
+0 j
+  20   20 1834 2739 PO
+  20   20 1834 2739 FO
+1 j
+0 j
+  20   20 2180 3037 PO
+  20   20 2180 3037 FO
+1 j
+0 j
+  20   20 5536 2393 PO
+  20   20 5536 2393 FO
+1 j
+0 j
+  20   20 4707 2963 PO
+  20   20 4707 2963 FO
+1 j
+0 j
+  20   20 3461 4278 PO
+  20   20 3461 4278 FO
+1 j
+0 j
+  20   20 4370  840 PO
+  20   20 4370  840 FO
+1 j
+0 j
+  20   20 1697 2775 PO
+  20   20 1697 2775 FO
+1 j
+0 j
+  20   20 1982 4378 PO
+  20   20 1982 4378 FO
+1 j
+0 j
+  20   20 2493  492 PO
+  20   20 2493  492 FO
+1 j
+0 j
+  20   20 2122 2376 PO
+  20   20 2122 2376 FO
+1 j
+0 j
+  20   20 3500 3589 PO
+  20   20 3500 3589 FO
+1 j
+0 j
+  20   20 3590  818 PO
+  20   20 3590  818 FO
+1 j
+0 j
+  20   20 2130  682 PO
+  20   20 2130  682 FO
+1 j
+0 j
+  20   20 5237 3217 PO
+  20   20 5237 3217 FO
+1 j
+0 j
+  20   20 3249 1480 PO
+  20   20 3249 1480 FO
+1 j
+0 j
+  20   20 2195 2771 PO
+  20   20 2195 2771 FO
+1 j
+0 j
+  20   20 2392 3331 PO
+  20   20 2392 3331 FO
+1 j
+0 j
+  20   20 3481 2902 PO
+  20   20 3481 2902 FO
+1 j
+0 j
+  20   20 5299 3784 PO
+  20   20 5299 3784 FO
+1 j
+0 j
+  20   20 2470 2218 PO
+  20   20 2470 2218 FO
+1 j
+0 j
+  20   20 2181 2323 PO
+  20   20 2181 2323 FO
+1 j
+0 j
+  20   20 5315  758 PO
+  20   20 5315  758 FO
+1 j
+0 j
+  20   20 3304 2485 PO
+  20   20 3304 2485 FO
+1 j
+0 j
+  20   20 2017 2528 PO
+  20   20 2017 2528 FO
+1 j
+0 j
+  20   20 2181 2271 PO
+  20   20 2181 2271 FO
+1 j
+0 j
+  20   20 1879  988 PO
+  20   20 1879  988 FO
+1 j
+0 j
+  20   20 3185 2223 PO
+  20   20 3185 2223 FO
+1 j
+0 j
+  20   20 2988 2592 PO
+  20   20 2988 2592 FO
+1 j
+0 j
+  20   20 2342 2988 PO
+  20   20 2342 2988 FO
+1 j
+0 j
+  20   20 3823 3283 PO
+  20   20 3823 3283 FO
+1 j
+0 j
+  20   20 5015 1052 PO
+  20   20 5015 1052 FO
+1 j
+0 j
+  20   20 5069 3841 PO
+  20   20 5069 3841 FO
+1 j
+0 j
+  20   20 5380 3124 PO
+  20   20 5380 3124 FO
+1 j
+0 j
+  20   20 1942  793 PO
+  20   20 1942  793 FO
+1 j
+0 j
+  20   20 5520 3540 PO
+  20   20 5520 3540 FO
+1 j
+0 j
+  20   20 4845 4297 PO
+  20   20 4845 4297 FO
+1 j
+0 j
+  20   20 1922 1167 PO
+  20   20 1922 1167 FO
+1 j
+0 j
+  20   20 3374  981 PO
+  20   20 3374  981 FO
+1 j
+0 j
+  20   20 1802 3355 PO
+  20   20 1802 3355 FO
+1 j
+0 j
+  20   20 1748 2177 PO
+  20   20 1748 2177 FO
+1 j
+0 j
+  20   20 4265  869 PO
+  20   20 4265  869 FO
+1 j
+0 j
+  20   20 4512 3628 PO
+  20   20 4512 3628 FO
+1 j
+0 j
+  20   20 5548 1554 PO
+  20   20 5548 1554 FO
+1 j
+0 j
+  20   20 4644  873 PO
+  20   20 4644  873 FO
+1 j
+0 j
+  20   20 2267 2766 PO
+  20   20 2267 2766 FO
+1 j
+0 j
+  20   20 2427 1278 PO
+  20   20 2427 1278 FO
+1 j
+0 j
+  20   20 3872 1419 PO
+  20   20 3872 1419 FO
+1 j
+0 j
+  20   20 3061 3040 PO
+  20   20 3061 3040 FO
+1 j
+0 j
+  20   20 4854  977 PO
+  20   20 4854  977 FO
+1 j
+0 j
+  20   20 1862 3015 PO
+  20   20 1862 3015 FO
+1 j
+0 j
+  20   20 4154  863 PO
+  20   20 4154  863 FO
+1 j
+0 j
+  20   20 4061 3170 PO
+  20   20 4061 3170 FO
+1 j
+0 j
+  20   20 4120  990 PO
+  20   20 4120  990 FO
+1 j
+0 j
+  20   20 4379 3885 PO
+  20   20 4379 3885 FO
+1 j
+0 j
+  20   20 3839 4323 PO
+  20   20 3839 4323 FO
+1 j
+0 j
+  20   20 3734 4071 PO
+  20   20 3734 4071 FO
+1 j
+0 j
+  20   20 5051 3651 PO
+  20   20 5051 3651 FO
+1 j
+0 j
+  20   20 3034 3312 PO
+  20   20 3034 3312 FO
+1 j
+0 j
+  20   20 2625 4257 PO
+  20   20 2625 4257 FO
+1 j
+0 j
+  20   20 4245  741 PO
+  20   20 4245  741 FO
+1 j
+0 j
+  20   20 2971 1707 PO
+  20   20 2971 1707 FO
+1 j
+0 j
+  20   20 3569  751 PO
+  20   20 3569  751 FO
+1 j
+0 j
+  20   20 4954  863 PO
+  20   20 4954  863 FO
+1 j
+0 j
+  20   20 4064 2512 PO
+  20   20 4064 2512 FO
+1 j
+0 j
+  20   20 3279 2842 PO
+  20   20 3279 2842 FO
+1 j
+0 j
+  20   20 5346  953 PO
+  20   20 5346  953 FO
+1 j
+0 j
+  20   20 4088 4402 PO
+  20   20 4088 4402 FO
+1 j
+0 j
+  20   20 4014 4088 PO
+  20   20 4014 4088 FO
+1 j
+0 j
+  20   20 2581 4272 PO
+  20   20 2581 4272 FO
+1 j
+0 j
+  20   20 1639 2646 PO
+  20   20 1639 2646 FO
+1 j
+0 j
+  20   20 4472 1785 PO
+  20   20 4472 1785 FO
+1 j
+0 j
+  20   20 5408 1127 PO
+  20   20 5408 1127 FO
+1 j
+0 j
+  20   20 4960  679 PO
+  20   20 4960  679 FO
+1 j
+0 j
+  20   20 4860 4429 PO
+  20   20 4860 4429 FO
+1 j
+0 j
+  20   20 3247 2030 PO
+  20   20 3247 2030 FO
+1 j
+0 j
+  20   20 3449 4445 PO
+  20   20 3449 4445 FO
+1 j
+0 j
+  20   20 4911 4367 PO
+  20   20 4911 4367 FO
+1 j
+0 j
+  20   20 4719 4193 PO
+  20   20 4719 4193 FO
+1 j
+0 j
+  20   20 3633  555 PO
+  20   20 3633  555 FO
+1 j
+0 j
+  20   20 4466 1490 PO
+  20   20 4466 1490 FO
+1 j
+0 j
+  20   20 3175 2858 PO
+  20   20 3175 2858 FO
+1 j
+0 j
+  20   20 3235 1507 PO
+  20   20 3235 1507 FO
+1 j
+0 j
+  20   20 1946 2858 PO
+  20   20 1946 2858 FO
+1 j
+0 j
+  20   20 4479 1909 PO
+  20   20 4479 1909 FO
+1 j
+0 j
+  20   20 3497 1519 PO
+  20   20 3497 1519 FO
+1 j
+0 j
+  20   20 3093 3215 PO
+  20   20 3093 3215 FO
+1 j
+0 j
+  20   20 3774 2642 PO
+  20   20 3774 2642 FO
+1 j
+0 j
+  20   20 4886 2972 PO
+  20   20 4886 2972 FO
+1 j
+0 j
+  20   20 2188 3808 PO
+  20   20 2188 3808 FO
+1 j
+0 j
+  20   20 3086 2365 PO
+  20   20 3086 2365 FO
+1 j
+0 j
+  20   20 4807 2266 PO
+  20   20 4807 2266 FO
+1 j
+0 j
+  20   20 3456 1119 PO
+  20   20 3456 1119 FO
+1 j
+0 j
+  20   20 3333 2828 PO
+  20   20 3333 2828 FO
+1 j
+0 j
+  20   20 3472 2412 PO
+  20   20 3472 2412 FO
+1 j
+0 j
+  20   20 3445 1807 PO
+  20   20 3445 1807 FO
+1 j
+0 j
+  20   20 3185  589 PO
+  20   20 3185  589 FO
+1 j
+0 j
+  20   20 1764  684 PO
+  20   20 1764  684 FO
+1 j
+0 j
+  20   20 2762  854 PO
+  20   20 2762  854 FO
+1 j
+0 j
+  20   20 2165 2493 PO
+  20   20 2165 2493 FO
+1 j
+0 j
+  20   20 4177 2565 PO
+  20   20 4177 2565 FO
+1 j
+0 j
+  20   20 5522 3209 PO
+  20   20 5522 3209 FO
+1 j
+0 j
+  20   20 5066 1528 PO
+  20   20 5066 1528 FO
+1 j
+0 j
+  20   20 3600 3083 PO
+  20   20 3600 3083 FO
+1 j
+0 j
+  20   20 1977 4236 PO
+  20   20 1977 4236 FO
+1 j
+0 j
+  20   20 3340 3366 PO
+  20   20 3340 3366 FO
+1 j
+0 j
+  20   20 3502 2986 PO
+  20   20 3502 2986 FO
+1 j
+0 j
+  20   20 5431 4396 PO
+  20   20 5431 4396 FO
+1 j
+0 j
+  20   20 3129 3536 PO
+  20   20 3129 3536 FO
+1 j
+0 j
+  20   20 2025 1057 PO
+  20   20 2025 1057 FO
+1 j
+0 j
+  20   20 4259 4134 PO
+  20   20 4259 4134 FO
+1 j
+0 j
+  20   20 4284 3114 PO
+  20   20 4284 3114 FO
+1 j
+0 j
+  20   20 3796 1738 PO
+  20   20 3796 1738 FO
+1 j
+0 j
+  20   20 2675 3423 PO
+  20   20 2675 3423 FO
+1 j
+0 j
+  20   20 4314 2802 PO
+  20   20 4314 2802 FO
+1 j
+0 j
+  20   20 3884 4412 PO
+  20   20 3884 4412 FO
+1 j
+0 j
+  20   20 5310 3463 PO
+  20   20 5310 3463 FO
+1 j
+0 j
+  20   20 2035 3531 PO
+  20   20 2035 3531 FO
+1 j
+0 j
+  20   20 2213 3620 PO
+  20   20 2213 3620 FO
+1 j
+0 j
+  20   20 1712 2473 PO
+  20   20 1712 2473 FO
+1 j
+0 j
+  20   20 4403 2073 PO
+  20   20 4403 2073 FO
+1 j
+0 j
+  20   20 3880 3202 PO
+  20   20 3880 3202 FO
+1 j
+0 j
+  20   20 3957 1610 PO
+  20   20 3957 1610 FO
+1 j
+0 j
+  20   20 4050 2183 PO
+  20   20 4050 2183 FO
+1 j
+0 j
+  20   20 3239 1355 PO
+  20   20 3239 1355 FO
+1 j
+0 j
+  20   20 5485 1570 PO
+  20   20 5485 1570 FO
+1 j
+0 j
+  20   20 2291 2117 PO
+  20   20 2291 2117 FO
+1 j
+0 j
+  20   20 4454 2884 PO
+  20   20 4454 2884 FO
+1 j
+0 j
+  20   20 2870 3600 PO
+  20   20 2870 3600 FO
+1 j
+0 j
+  20   20 5431 1901 PO
+  20   20 5431 1901 FO
+1 j
+0 j
+  20   20 5023  787 PO
+  20   20 5023  787 FO
+1 j
+0 j
+  20   20 2904 1458 PO
+  20   20 2904 1458 FO
+1 j
+0 j
+  20   20 4657 3595 PO
+  20   20 4657 3595 FO
+1 j
+0 j
+  20   20 3000  858 PO
+  20   20 3000  858 FO
+1 j
+0 j
+  20   20 4765 2926 PO
+  20   20 4765 2926 FO
+1 j
+0 j
+  20   20 4403  636 PO
+  20   20 4403  636 FO
+1 j
+0 j
+  20   20 1709 2543 PO
+  20   20 1709 2543 FO
+1 j
+0 j
+  20   20 3211 1104 PO
+  20   20 3211 1104 FO
+1 j
+0 j
+  20   20 4590 4476 PO
+  20   20 4590 4476 FO
+1 j
+0 j
+  20   20 2813 1534 PO
+  20   20 2813 1534 FO
+1 j
+0 j
+  20   20 4086 3158 PO
+  20   20 4086 3158 FO
+1 j
+0 j
+  20   20 3453 1147 PO
+  20   20 3453 1147 FO
+1 j
+0 j
+  20   20 2811  988 PO
+  20   20 2811  988 FO
+1 j
+0 j
+  20   20 5214 3218 PO
+  20   20 5214 3218 FO
+1 j
+0 j
+  20   20 4913 2744 PO
+  20   20 4913 2744 FO
+1 j
+0 j
+  20   20 3707 1824 PO
+  20   20 3707 1824 FO
+1 j
+0 j
+  20   20 1940 2924 PO
+  20   20 1940 2924 FO
+1 j
+0 j
+  20   20 1632  825 PO
+  20   20 1632  825 FO
+1 j
+0 j
+  20   20 3142 1900 PO
+  20   20 3142 1900 FO
+1 j
+0 j
+  20   20 5512 1557 PO
+  20   20 5512 1557 FO
+1 j
+0 j
+  20   20 3618 1699 PO
+  20   20 3618 1699 FO
+1 j
+0 j
+  20   20 2015 2651 PO
+  20   20 2015 2651 FO
+1 j
+0 j
+  20   20 2627 2325 PO
+  20   20 2627 2325 FO
+1 j
+0 j
+  20   20 1614 2493 PO
+  20   20 1614 2493 FO
+1 j
+0 j
+  20   20 1706 3910 PO
+  20   20 1706 3910 FO
+1 j
+0 j
+  20   20 5157 2257 PO
+  20   20 5157 2257 FO
+1 j
+0 j
+  20   20 2789 1934 PO
+  20   20 2789 1934 FO
+1 j
+0 j
+  20   20 5571 3974 PO
+  20   20 5571 3974 FO
+1 j
+0 j
+  20   20 3066 1688 PO
+  20   20 3066 1688 FO
+1 j
+0 j
+  20   20 3091 3142 PO
+  20   20 3091 3142 FO
+1 j
+0 j
+  20   20 3597 2814 PO
+  20   20 3597 2814 FO
+1 j
+0 j
+  20   20 4906 2676 PO
+  20   20 4906 2676 FO
+1 j
+0 j
+  20   20 5148  604 PO
+  20   20 5148  604 FO
+1 j
+0 j
+  20   20 1803 1399 PO
+  20   20 1803 1399 FO
+1 j
+0 j
+  20   20 2572 1012 PO
+  20   20 2572 1012 FO
+1 j
+0 j
+  20   20 3178 3358 PO
+  20   20 3178 3358 FO
+1 j
+0 j
+  20   20 4503 3607 PO
+  20   20 4503 3607 FO
+1 j
+0 j
+  20   20 2075 1386 PO
+  20   20 2075 1386 FO
+1 j
+0 j
+  20   20 3273 4357 PO
+  20   20 3273 4357 FO
+1 j
+0 j
+  20   20 4681 1440 PO
+  20   20 4681 1440 FO
+1 j
+0 j
+  20   20 3805 1606 PO
+  20   20 3805 1606 FO
+1 j
+0 j
+  20   20 2393 3109 PO
+  20   20 2393 3109 FO
+1 j
+0 j
+  20   20 4074 3149 PO
+  20   20 4074 3149 FO
+1 j
+0 j
+  20   20 4147 4466 PO
+  20   20 4147 4466 FO
+1 j
+0 j
+  20   20 2651 1831 PO
+  20   20 2651 1831 FO
+1 j
+0 j
+  20   20 2517 4381 PO
+  20   20 2517 4381 FO
+1 j
+0 j
+  20   20 5060 1009 PO
+  20   20 5060 1009 FO
+1 j
+0 j
+  20   20 3630 3335 PO
+  20   20 3630 3335 FO
+1 j
+0 j
+  20   20 4736 3736 PO
+  20   20 4736 3736 FO
+1 j
+0 j
+  20   20 3906  751 PO
+  20   20 3906  751 FO
+1 j
+0 j
+  20   20 3898 1551 PO
+  20   20 3898 1551 FO
+1 j
+0 j
+  20   20 3403 3424 PO
+  20   20 3403 3424 FO
+1 j
+0 j
+  20   20 3168 2287 PO
+  20   20 3168 2287 FO
+1 j
+0 j
+  20   20 2773 1666 PO
+  20   20 2773 1666 FO
+1 j
+0 j
+  20   20 2952 3005 PO
+  20   20 2952 3005 FO
+1 j
+0 j
+  20   20 4032 1702 PO
+  20   20 4032 1702 FO
+1 j
+0 j
+  20   20 5097 1801 PO
+  20   20 5097 1801 FO
+1 j
+0 j
+  20   20 2765 1074 PO
+  20   20 2765 1074 FO
+1 j
+0 j
+  20   20 2815 3254 PO
+  20   20 2815 3254 FO
+1 j
+0 j
+  20   20 5559 2769 PO
+  20   20 5559 2769 FO
+1 j
+0 j
+  20   20 2900 2900 PO
+  20   20 2900 2900 FO
+1 j
+0 j
+  20   20 2360 3694 PO
+  20   20 2360 3694 FO
+1 j
+0 j
+  20   20 4699 1274 PO
+  20   20 4699 1274 FO
+1 j
+0 j
+  20   20 2800 1475 PO
+  20   20 2800 1475 FO
+1 j
+0 j
+  20   20 3672 1458 PO
+  20   20 3672 1458 FO
+1 j
+0 j
+  20   20 5401 4351 PO
+  20   20 5401 4351 FO
+1 j
+0 j
+  20   20 3310 3526 PO
+  20   20 3310 3526 FO
+1 j
+0 j
+  20   20 3968 4405 PO
+  20   20 3968 4405 FO
+1 j
+0 j
+  20   20 2366 3104 PO
+  20   20 2366 3104 FO
+1 j
+0 j
+  20   20 1906 1631 PO
+  20   20 1906 1631 FO
+1 j
+0 j
+  20   20 4569 2364 PO
+  20   20 4569 2364 FO
+1 j
+0 j
+  20   20 1853 1443 PO
+  20   20 1853 1443 FO
+1 j
+0 j
+  20   20 4174 1396 PO
+  20   20 4174 1396 FO
+1 j
+0 j
+  20   20 2206  754 PO
+  20   20 2206  754 FO
+1 j
+0 j
+  20   20 3092 1930 PO
+  20   20 3092 1930 FO
+1 j
+0 j
+  20   20 4398 2139 PO
+  20   20 4398 2139 FO
+1 j
+0 j
+  20   20 4539 1742 PO
+  20   20 4539 1742 FO
+1 j
+0 j
+  20   20 1791 4134 PO
+  20   20 1791 4134 FO
+1 j
+0 j
+  20   20 2575 4214 PO
+  20   20 2575 4214 FO
+1 j
+0 j
+  20   20 5454 3715 PO
+  20   20 5454 3715 FO
+1 j
+0 j
+  20   20 3287 1772 PO
+  20   20 3287 1772 FO
+1 j
+0 j
+  20   20 2387  784 PO
+  20   20 2387  784 FO
+1 j
+0 j
+  20   20 2682 3192 PO
+  20   20 2682 3192 FO
+1 j
+0 j
+  20   20 1869 3811 PO
+  20   20 1869 3811 FO
+1 j
+0 j
+  20   20 5020 2781 PO
+  20   20 5020 2781 FO
+1 j
+0 j
+  20   20 3783  971 PO
+  20   20 3783  971 FO
+1 j
+0 j
+  20   20 2754 3795 PO
+  20   20 2754 3795 FO
+1 j
+0 j
+  20   20 3348 4200 PO
+  20   20 3348 4200 FO
+1 j
+0 j
+  20   20 4858 1374 PO
+  20   20 4858 1374 FO
+1 j
+0 j
+  20   20 2447 2310 PO
+  20   20 2447 2310 FO
+1 j
+0 j
+  20   20 3747 4492 PO
+  20   20 3747 4492 FO
+1 j
+0 j
+  20   20 5502 2906 PO
+  20   20 5502 2906 FO
+1 j
+0 j
+  20   20 1609 3494 PO
+  20   20 1609 3494 FO
+1 j
+0 j
+  20   20 3780 4426 PO
+  20   20 3780 4426 FO
+1 j
+0 j
+  20   20 3691 3647 PO
+  20   20 3691 3647 FO
+1 j
+0 j
+  20   20 2458 4073 PO
+  20   20 2458 4073 FO
+1 j
+0 j
+  20   20 1954 1046 PO
+  20   20 1954 1046 FO
+1 j
+0 j
+  20   20 4979 1978 PO
+  20   20 4979 1978 FO
+1 j
+0 j
+  20   20 4545  607 PO
+  20   20 4545  607 FO
+1 j
+0 j
+  20   20 2106  746 PO
+  20   20 2106  746 FO
+1 j
+0 j
+  20   20 3631 1083 PO
+  20   20 3631 1083 FO
+1 j
+0 j
+  20   20 4781 1623 PO
+  20   20 4781 1623 FO
+1 j
+0 j
+  20   20 2244 3606 PO
+  20   20 2244 3606 FO
+1 j
+0 j
+  20   20 4858 3707 PO
+  20   20 4858 3707 FO
+1 j
+0 j
+  20   20 1708 2384 PO
+  20   20 1708 2384 FO
+1 j
+0 j
+  20   20 4649 2803 PO
+  20   20 4649 2803 FO
+1 j
+0 j
+  20   20 2847 4266 PO
+  20   20 2847 4266 FO
+1 j
+0 j
+  20   20 3985 1937 PO
+  20   20 3985 1937 FO
+1 j
+0 j
+  20   20 4411 3452 PO
+  20   20 4411 3452 FO
+1 j
+0 j
+  20   20 2192  936 PO
+  20   20 2192  936 FO
+1 j
+0 j
+  20   20 2540 1347 PO
+  20   20 2540 1347 FO
+1 j
+0 j
+  20   20 2022 2674 PO
+  20   20 2022 2674 FO
+1 j
+0 j
+  20   20 4839 3286 PO
+  20   20 4839 3286 FO
+1 j
+0 j
+  20   20 3809 3348 PO
+  20   20 3809 3348 FO
+1 j
+0 j
+  20   20 2484 1876 PO
+  20   20 2484 1876 FO
+1 j
+0 j
+  20   20 4143  773 PO
+  20   20 4143  773 FO
+1 j
+0 j
+  20   20 5570  893 PO
+  20   20 5570  893 FO
+1 j
+0 j
+  20   20 5145 1255 PO
+  20   20 5145 1255 FO
+1 j
+0 j
+  20   20 2479 2651 PO
+  20   20 2479 2651 FO
+1 j
+0 j
+  20   20 4643 2085 PO
+  20   20 4643 2085 FO
+1 j
+0 j
+  20   20 5438 4293 PO
+  20   20 5438 4293 FO
+1 j
+0 j
+  20   20 4040 1011 PO
+  20   20 4040 1011 FO
+1 j
+0 j
+  20   20 1670  790 PO
+  20   20 1670  790 FO
+1 j
+0 j
+  20   20 3414 2022 PO
+  20   20 3414 2022 FO
+1 j
+0 j
+  20   20 4718 3661 PO
+  20   20 4718 3661 FO
+1 j
+0 j
+  20   20 4806 3949 PO
+  20   20 4806 3949 FO
+1 j
+0 j
+  20   20 1594 1908 PO
+  20   20 1594 1908 FO
+1 j
+0 j
+  20   20 2370 2891 PO
+  20   20 2370 2891 FO
+1 j
+0 j
+  20   20 2980 4403 PO
+  20   20 2980 4403 FO
+1 j
+0 j
+  20   20 4703 3160 PO
+  20   20 4703 3160 FO
+1 j
+0 j
+  20   20 4417 3697 PO
+  20   20 4417 3697 FO
+1 j
+0 j
+  20   20 3111 2964 PO
+  20   20 3111 2964 FO
+1 j
+0 j
+  20   20 3062 3175 PO
+  20   20 3062 3175 FO
+1 j
+0 j
+  20   20 2761 2064 PO
+  20   20 2761 2064 FO
+1 j
+0 j
+  20   20 4490 2634 PO
+  20   20 4490 2634 FO
+1 j
+0 j
+  20   20 5273 2787 PO
+  20   20 5273 2787 FO
+1 j
+0 j
+  20   20 2677 2139 PO
+  20   20 2677 2139 FO
+1 j
+0 j
+  20   20 2215  828 PO
+  20   20 2215  828 FO
+1 j
+0 j
+  20   20 2190  711 PO
+  20   20 2190  711 FO
+1 j
+0 j
+  20   20 3293  792 PO
+  20   20 3293  792 FO
+1 j
+0 j
+  20   20 4694 1403 PO
+  20   20 4694 1403 FO
+1 j
+0 j
+  20   20 4041  543 PO
+  20   20 4041  543 FO
+1 j
+0 j
+  20   20 2427 2321 PO
+  20   20 2427 2321 FO
+1 j
+0 j
+  20   20 4681 2031 PO
+  20   20 4681 2031 FO
+1 j
+0 j
+  20   20 4680 2109 PO
+  20   20 4680 2109 FO
+1 j
+0 j
+  20   20 1751  805 PO
+  20   20 1751  805 FO
+1 j
+0 j
+  20   20 5586 1429 PO
+  20   20 5586 1429 FO
+1 j
+0 j
+  20   20 5279 2444 PO
+  20   20 5279 2444 FO
+1 j
+0 j
+  20   20 5456 2105 PO
+  20   20 5456 2105 FO
+1 j
+0 j
+  20   20 4927  761 PO
+  20   20 4927  761 FO
+1 j
+0 j
+  20   20 2102 1148 PO
+  20   20 2102 1148 FO
+1 j
+0 j
+  20   20 5390 4369 PO
+  20   20 5390 4369 FO
+1 j
+0 j
+  20   20 3517 4185 PO
+  20   20 3517 4185 FO
+1 j
+0 j
+  20   20 2509 2784 PO
+  20   20 2509 2784 FO
+1 j
+0 j
+  20   20 2073 2412 PO
+  20   20 2073 2412 FO
+1 j
+0 j
+  20   20 2084 2719 PO
+  20   20 2084 2719 FO
+1 j
+0 j
+  20   20 2802 2077 PO
+  20   20 2802 2077 FO
+1 j
+0 j
+  20   20 4988 1295 PO
+  20   20 4988 1295 FO
+1 j
+0 j
+  20   20 4060 1006 PO
+  20   20 4060 1006 FO
+1 j
+0 j
+  20   20 5013  879 PO
+  20   20 5013  879 FO
+1 j
+0 j
+  20   20 2384 3789 PO
+  20   20 2384 3789 FO
+1 j
+0 j
+  20   20 3077 3872 PO
+  20   20 3077 3872 FO
+1 j
+0 j
+  20   20 2739 1623 PO
+  20   20 2739 1623 FO
+1 j
+0 j
+  20   20 4623 2771 PO
+  20   20 4623 2771 FO
+1 j
+0 j
+  20   20 5407 3408 PO
+  20   20 5407 3408 FO
+1 j
+0 j
+  20   20 4780 1815 PO
+  20   20 4780 1815 FO
+1 j
+0 j
+  20   20 4736  844 PO
+  20   20 4736  844 FO
+1 j
+0 j
+  20   20 4433 3846 PO
+  20   20 4433 3846 FO
+1 j
+0 j
+  20   20 4670 2997 PO
+  20   20 4670 2997 FO
+1 j
+0 j
+  20   20 4010 3407 PO
+  20   20 4010 3407 FO
+1 j
+0 j
+  20   20 1933 3869 PO
+  20   20 1933 3869 FO
+1 j
+0 j
+  20   20 2209 2247 PO
+  20   20 2209 2247 FO
+1 j
+0 j
+  20   20 1824 4377 PO
+  20   20 1824 4377 FO
+1 j
+0 j
+  20   20 1904 2531 PO
+  20   20 1904 2531 FO
+1 j
+0 j
+  20   20 2847 1054 PO
+  20   20 2847 1054 FO
+1 j
+0 j
+  20   20 4800 1209 PO
+  20   20 4800 1209 FO
+1 j
+0 j
+  20   20 2316 2796 PO
+  20   20 2316 2796 FO
+1 j
+0 j
+  20   20 4413  504 PO
+  20   20 4413  504 FO
+1 j
+0 j
+  20   20 1981 2222 PO
+  20   20 1981 2222 FO
+1 j
+0 j
+  20   20 3352 3946 PO
+  20   20 3352 3946 FO
+1 j
+0 j
+  20   20 2166 3323 PO
+  20   20 2166 3323 FO
+1 j
+0 j
+  20   20 5186  719 PO
+  20   20 5186  719 FO
+1 j
+0 j
+  20   20 4802 3081 PO
+  20   20 4802 3081 FO
+1 j
+0 j
+  20   20 2549 2690 PO
+  20   20 2549 2690 FO
+1 j
+0 j
+  20   20 3410 1194 PO
+  20   20 3410 1194 FO
+1 j
+0 j
+  20   20 1780 1515 PO
+  20   20 1780 1515 FO
+1 j
+0 j
+  20   20 5183 3126 PO
+  20   20 5183 3126 FO
+1 j
+0 j
+  20   20 5489 2813 PO
+  20   20 5489 2813 FO
+1 j
+0 j
+  20   20 3048 2205 PO
+  20   20 3048 2205 FO
+1 j
+0 j
+  20   20 3067 3730 PO
+  20   20 3067 3730 FO
+1 j
+0 j
+  20   20 5283 2456 PO
+  20   20 5283 2456 FO
+1 j
+0 j
+  20   20 3491 2272 PO
+  20   20 3491 2272 FO
+1 j
+0 j
+  20   20 3115 4465 PO
+  20   20 3115 4465 FO
+1 j
+0 j
+  20   20 4666 3537 PO
+  20   20 4666 3537 FO
+1 j
+0 j
+  20   20 2704 1821 PO
+  20   20 2704 1821 FO
+1 j
+0 j
+  20   20 4476  671 PO
+  20   20 4476  671 FO
+1 j
+0 j
+  20   20 4764 4379 PO
+  20   20 4764 4379 FO
+1 j
+0 j
+  20   20 1999 2192 PO
+  20   20 1999 2192 FO
+1 j
+0 j
+  20   20 5022 1264 PO
+  20   20 5022 1264 FO
+1 j
+0 j
+  20   20 3274 4401 PO
+  20   20 3274 4401 FO
+1 j
+0 j
+  20   20 2296 2644 PO
+  20   20 2296 2644 FO
+1 j
+0 j
+  20   20 5367 3060 PO
+  20   20 5367 3060 FO
+1 j
+0 j
+  20   20 2183 2373 PO
+  20   20 2183 2373 FO
+1 j
+0 j
+  20   20 1998 4120 PO
+  20   20 1998 4120 FO
+1 j
+0 j
+  20   20 1644 2555 PO
+  20   20 1644 2555 FO
+1 j
+0 j
+  20   20 3921 3318 PO
+  20   20 3921 3318 FO
+1 j
+0 j
+  20   20 2323 3116 PO
+  20   20 2323 3116 FO
+1 j
+0 j
+  20   20 3093 4217 PO
+  20   20 3093 4217 FO
+1 j
+0 j
+  20   20 3072 3154 PO
+  20   20 3072 3154 FO
+1 j
+0 j
+  20   20 3082 2716 PO
+  20   20 3082 2716 FO
+1 j
+0 j
+  20   20 4099 2289 PO
+  20   20 4099 2289 FO
+1 j
+0 j
+  20   20 2290 4453 PO
+  20   20 2290 4453 FO
+1 j
+0 j
+  20   20 3314 1785 PO
+  20   20 3314 1785 FO
+1 j
+0 j
+  20   20 4433 3024 PO
+  20   20 4433 3024 FO
+1 j
+0 j
+  20   20 3235 3958 PO
+  20   20 3235 3958 FO
+1 j
+0 j
+  20   20 2179 1336 PO
+  20   20 2179 1336 FO
+1 j
+0 j
+  20   20 3589  652 PO
+  20   20 3589  652 FO
+1 j
+0 j
+  20   20 5562 1217 PO
+  20   20 5562 1217 FO
+1 j
+0 j
+  20   20 3103  901 PO
+  20   20 3103  901 FO
+1 j
+0 j
+  20   20 3172 2099 PO
+  20   20 3172 2099 FO
+1 j
+0 j
+  20   20 3411 2693 PO
+  20   20 3411 2693 FO
+1 j
+0 j
+  20   20 5295 1349 PO
+  20   20 5295 1349 FO
+1 j
+0 j
+  20   20 5283 1436 PO
+  20   20 5283 1436 FO
+1 j
+0 j
+  20   20 1766 1549 PO
+  20   20 1766 1549 FO
+1 j
+0 j
+  20   20 4268 1850 PO
+  20   20 4268 1850 FO
+1 j
+0 j
+  20   20 4163 2052 PO
+  20   20 4163 2052 FO
+1 j
+0 j
+  20   20 4705 2266 PO
+  20   20 4705 2266 FO
+1 j
+0 j
+  20   20 5433 2037 PO
+  20   20 5433 2037 FO
+1 j
+0 j
+  20   20 5308 3267 PO
+  20   20 5308 3267 FO
+1 j
+0 j
+  20   20 3590 3087 PO
+  20   20 3590 3087 FO
+1 j
+0 j
+  20   20 4248 1342 PO
+  20   20 4248 1342 FO
+1 j
+0 j
+  20   20 1784 1754 PO
+  20   20 1784 1754 FO
+1 j
+0 j
+  20   20 5039 1441 PO
+  20   20 5039 1441 FO
+1 j
+0 j
+  20   20 3246 2811 PO
+  20   20 3246 2811 FO
+1 j
+0 j
+  20   20 2886 2371 PO
+  20   20 2886 2371 FO
+1 j
+0 j
+  20   20 3044 2629 PO
+  20   20 3044 2629 FO
+1 j
+0 j
+  20   20 3537 2236 PO
+  20   20 3537 2236 FO
+1 j
+0 j
+  20   20 1904 2805 PO
+  20   20 1904 2805 FO
+1 j
+0 j
+  20   20 2584 1854 PO
+  20   20 2584 1854 FO
+1 j
+0 j
+  20   20 5223 1966 PO
+  20   20 5223 1966 FO
+1 j
+0 j
+  20   20 2758 2487 PO
+  20   20 2758 2487 FO
+1 j
+0 j
+  20   20 1912 1852 PO
+  20   20 1912 1852 FO
+1 j
+0 j
+  20   20 3299 1008 PO
+  20   20 3299 1008 FO
+1 j
+0 j
+  20   20 5201  591 PO
+  20   20 5201  591 FO
+1 j
+0 j
+  20   20 2340 4102 PO
+  20   20 2340 4102 FO
+1 j
+0 j
+  20   20 2511 3174 PO
+  20   20 2511 3174 FO
+1 j
+0 j
+  20   20 3644 4254 PO
+  20   20 3644 4254 FO
+1 j
+0 j
+  20   20 2050 1079 PO
+  20   20 2050 1079 FO
+1 j
+0 j
+  20   20 4974 3336 PO
+  20   20 4974 3336 FO
+1 j
+0 j
+  20   20 4851 2685 PO
+  20   20 4851 2685 FO
+1 j
+0 j
+  20   20 3478 2983 PO
+  20   20 3478 2983 FO
+1 j
+0 j
+  20   20 4140 4466 PO
+  20   20 4140 4466 FO
+1 j
+0 j
+  20   20 4240 2898 PO
+  20   20 4240 2898 FO
+1 j
+0 j
+  20   20 5301  810 PO
+  20   20 5301  810 FO
+1 j
+0 j
+  20   20 3888 4383 PO
+  20   20 3888 4383 FO
+1 j
+0 j
+  20   20 2412 3874 PO
+  20   20 2412 3874 FO
+1 j
+0 j
+  20   20 5143 2823 PO
+  20   20 5143 2823 FO
+1 j
+0 j
+  20   20 5473 2751 PO
+  20   20 5473 2751 FO
+1 j
+0 j
+  20   20 4794 3332 PO
+  20   20 4794 3332 FO
+1 j
+0 j
+  20   20 5462 3874 PO
+  20   20 5462 3874 FO
+1 j
+0 j
+  20   20 4664 3839 PO
+  20   20 4664 3839 FO
+1 j
+0 j
+  20   20 4079  631 PO
+  20   20 4079  631 FO
+1 j
+0 j
+  20   20 4761 4195 PO
+  20   20 4761 4195 FO
+1 j
+0 j
+  20   20 3972 4392 PO
+  20   20 3972 4392 FO
+1 j
+0 j
+  20   20 2109 3773 PO
+  20   20 2109 3773 FO
+1 j
+0 j
+  20   20 4989 1464 PO
+  20   20 4989 1464 FO
+1 j
+0 j
+  20   20 3062 3165 PO
+  20   20 3062 3165 FO
+1 j
+0 j
+  20   20 3657 3613 PO
+  20   20 3657 3613 FO
+1 j
+0 j
+  20   20 4693 3406 PO
+  20   20 4693 3406 FO
+1 j
+0 j
+  20   20 1644 2303 PO
+  20   20 1644 2303 FO
+1 j
+0 j
+  20   20 3109 2617 PO
+  20   20 3109 2617 FO
+1 j
+0 j
+  20   20 4293 2740 PO
+  20   20 4293 2740 FO
+1 j
+0 j
+  20   20 3791  517 PO
+  20   20 3791  517 FO
+1 j
+0 j
+  20   20 3530 3123 PO
+  20   20 3530 3123 FO
+1 j
+0 j
+  20   20 4379  955 PO
+  20   20 4379  955 FO
+1 j
+0 j
+  20   20 2186 4042 PO
+  20   20 2186 4042 FO
+1 j
+0 j
+  20   20 3033 4038 PO
+  20   20 3033 4038 FO
+1 j
+0 j
+  20   20 4518 1860 PO
+  20   20 4518 1860 FO
+1 j
+0 j
+  20   20 3026 1675 PO
+  20   20 3026 1675 FO
+1 j
+0 j
+  20   20 2781 3260 PO
+  20   20 2781 3260 FO
+1 j
+0 j
+  20   20 3202  820 PO
+  20   20 3202  820 FO
+1 j
+0 j
+  20   20 2648 2116 PO
+  20   20 2648 2116 FO
+1 j
+0 j
+  20   20 4311 3146 PO
+  20   20 4311 3146 FO
+1 j
+0 j
+  20   20 2460 3954 PO
+  20   20 2460 3954 FO
+1 j
+gr
+
+c8
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

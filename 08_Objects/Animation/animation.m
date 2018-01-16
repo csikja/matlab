@@ -1,0 +1,149 @@
+% Animation and interpolation
+
+%% Example 1
+%
+
+x = 0:7;
+y = [0, 1, 5, 5, 1, 0, 2, 3];
+
+th = linspace(0, 2*pi);
+
+scr_size = get(0, 'ScreenSize');
+scr_size(1:2) = [];
+
+figure(...
+    'Position', [scr_size/4, scr_size/2],...
+    'Name', 'Animation by interpolation',...
+    'NumberTitle', 'off')
+
+axes(...
+    'XLim', [-1, 8],...
+    'YLim', [-1, 6],...
+    'DataAspectRatio', [1, 1, 1],...
+    'NextPlot', 'add')
+
+
+
+t = linspace(0,7);
+z1 = interp1(x, y, t);
+z2 = interp1(x, y, t, 'spline');
+
+plot(x, y, 'or', t, z1, '--r', t, z2, '-b')
+axis('equal')
+
+
+
+pos_p1 = [0, 0];
+pos_p2 = [2, 5];
+
+p1 = patch(...
+    'XData', pos_p1(1) + 0.1*cos(th),...
+    'YData', pos_p1(2) + 0.1*sin(th),...
+    'EdgeColor', 'none',...
+    'FaceColor', [1, 0, 0]);
+
+p2 = patch(...
+    'XData', pos_p2(1) + 0.1*cos(th),...
+    'YData', pos_p2(2) + 0.1*sin(th),...
+    'EdgeColor', 'none',...
+    'FaceColor', [0, 0, 1]);
+
+for t = linspace(0,1)
+    s1 = 0*(1-t) + 7*t;
+    s2 = 2*(1-t) + 5*t;
+    pos_p1 = [s1, interp1(x, y, s1)];
+    pos_p2 = [s2, interp1(x, y, s2, 'spline')];
+    set(p1,...
+        'XData', pos_p1(1) + 0.1*cos(th),...
+        'YData', pos_p1(2) + 0.1*sin(th))
+    set(p2,...
+        'XData', pos_p2(1) + 0.1*cos(th),...
+        'YData', pos_p2(2) + 0.1*sin(th))
+    pause(0.04)
+end
+
+
+
+%% Example 2
+%
+
+fps = 25;
+dt = 1/fps;
+t_end = 5;
+t = linspace(0,1,floor(t_end*fps));
+method = 'spline';
+
+x = [0, 4, 8];
+y = [0, 3, 3];
+fi = [0, 50, -90]*pi/180;
+r = [1, 0.2, 2.5];
+tp = [0, 0.5, 1];
+
+scr_size = get(0, 'ScreenSize');
+scr_size(1:2) = [];
+
+figure(...
+    'Position', [scr_size/4, scr_size/2],...
+    'Name', 'Animation by interpolation',...
+    'NumberTitle', 'off')
+
+axes(...
+    'Position', [0.05, 0.1, 0.27, 0.4],...
+    'XLim', [0, 1],...
+    'YLim', [-1, 9],...
+    'NextPlot', 'add')
+ 
+xx = interp1(tp, x, t, method);
+yy = interp1(tp, y, t, method);
+plot(t, xx, t, yy, 'r')
+xlabel('relative time')
+legend({'x', 'y'})
+
+axes(...
+    'Position', [0.37, 0.1, 0.27, 0.4],...
+    'XLim', [0, 1],...
+    'YLim', [-90, 50],...
+    'NextPlot', 'add')
+
+ffi = interp1(tp, fi, t, method);
+plot(t, ffi*180/pi, 'b')
+xlabel('relative time')
+legend('rotation angle')
+
+axes(...
+    'Position', [0.69, 0.1, 0.27, 0.4],...
+    'XLim', [0, 1],...
+    'YLim', [0, 3],...
+    'NextPlot', 'add')
+
+rr = interp1(tp, r, t, method);
+plot(t, rr, 'r')
+xlabel('relative time')
+legend('size')
+
+axes(...
+    'Position', [0, 0.55, 1, 0.42],...
+    'XLim', [-1, 12],...
+    'YLim', [-1, 7],...
+    'DataAspectRatio', [1, 1, 1],...
+    'NextPlot', 'add')
+
+rec = @(pos, rad, ang) rad*[cos(ang), -sin(ang); sin(ang), cos(ang)]*[[-1, 1, 1, -1];[-1, -1, 1, 1]] + repmat(pos', 1, 4);
+pos = [0, 0];
+
+R = rec([0, 0], 0.5, pi/4);
+get_row = @(x, k) x(k,:);
+
+p = patch(...
+    'XData', R(1,:) ,...
+    'YData', R(2,:),...
+    'EdgeColor', 'none',...
+    'FaceColor', [0, 0, 1]);
+
+for i = 1:length(t);
+    R = rec([xx(i), yy(i)], rr(i), ffi(i));
+    set(p,...
+        'XData', R(1,:),...
+        'YData', R(2,:))
+    pause(dt)
+end

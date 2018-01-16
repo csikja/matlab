@@ -1,0 +1,3 @@
+function drawRanking(BJGame)
+
+end

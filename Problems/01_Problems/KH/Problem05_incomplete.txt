@@ -1,0 +1,17 @@
+uint8 is an unsigned integer. As 5-17 is a negative number, which can't be expressed by unsigned integers. As there is no underflow in matlab, it returns the lowest number that it is possible using unsigned integers: 0
+
+
+An array cannot consist of a mixture of strings and doubles.
+
+
+int8 is a signed integer with an 8 bit capacity
+thus, it can store 2^8 different values from -128 to 127.
+As 1-2^10 is smaller than -2^7, it cannot be represented. As there is no underflow, MatLab returns the smallest value of which a int8 is capable: -128
+
+
+>> 1+0.1 * eps
+ans =
+     1
+>> 1+100*eps
+ans =
+    1.0000

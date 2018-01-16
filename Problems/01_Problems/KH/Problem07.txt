@@ -1,0 +1,3 @@
+The list of cumulated sums reflects the ASCII coding for the resulting list of characters.
+
+char(cumsum([72,29,7,0,3,-79,55,24,3,-6,-8,-67]))
